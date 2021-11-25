@@ -1,107 +1,67 @@
 import React from 'react'
-import { Box, SimpleGrid, Heading, Text, Flex, List, ListIcon, ListItem } from '@chakra-ui/layout'
-import CallNowPhoneBt from '../atoms/CallNowPhoneBt'
-import { CheckIcon } from '@chakra-ui/icons'
-
+import { Box, Heading, Text, Flex } from '@chakra-ui/layout'
+import { Table, Thead, Tbody, Tr, Th, Td } from "@chakra-ui/react"
 const Plans = () => {
     return (
 <>
 <Box align="center" bgColor="#fff" p={{base:"10", md:"0 10 "}}>
-    <Heading mb="10">Ziply Fiber: Speeds that will knock your socks off</Heading>
-
-    <Flex mb="30px" maxW="1250px" rounded="md" boxShadow="2xl" bgColor="#F1F1F1" align="center" direction="column" >
-      <List p="6" textAlign="start" color="#000000" spacing={1}>
-                <ListItem>
-                    <ListIcon as={CheckIcon}  />
-                    Unlimited data and no annual contract 
-                </ListItem>
-                <ListItem>
-                    <ListIcon as={CheckIcon}  />
-                    25x faster upload speeds than cable with Fiber Gig 
-                </ListItem>
-                <ListItem>
-                    <ListIcon as={CheckIcon}  />
-                    30-day moneyback guarantee
-                </ListItem>
-      </List>
-      </Flex>
-
-
-  <SimpleGrid columns={{base:"1", md:"3"}} spacing={10} maxW="1250px">
-    <Flex rounded="md" boxShadow="2xl" bgColor="#F1F1F1" align="center" direction="column" >
-      <Box bgColor="#000050" color="#fff" w="100%" mb="" p="5">
-        <Heading pb="10px" as="h3" fontSize="2xl">Access Internet 60</Heading>
-
-        <Flex align="start" color="#fff" justify="center" direction="row" fontWeight="700">
-          <Box fontSize="29px" mt="7px" >$</Box>
-          <Box fontSize="94px" mt="-25px">60</Box>
-          <Box direction="column">
-              <Box fontSize="43px" textAlign="start" mb="-18px" >00</Box><Box fontSize="21px" textAlign="start" mb="-5px" >/mo.</Box>
-          </Box>
-        </Flex>
-      </Box>
-      <Box justify="start" w="100%" p="5">
-      <List pb="6" textAlign="start" color="#000000" spacing={1}>
-                <ListItem>
-                    <ListIcon as={CheckIcon}  />
-                    Gig Speed with 25x Faster Uploads than Cable 
-                </ListItem>
-            </List>
-      <CallNowPhoneBt/>
-      </Box>
-    </Flex>
-    
-    <Flex rounded="md" boxShadow="2xl" bgColor="#F1F1F1" align="center" direction="column" >
-      <Box bgColor="#000050" color="#fff" w="100%" mb="" p="5">
-        <Heading pb="10px" as="h3" fontSize="2xl">Ziply Fiber 200/200</Heading>
-
-        <Flex align="start" color="#fff" justify="center" direction="row" fontWeight="700">
-          <Box fontSize="29px" mt="7px" >$</Box>
-          <Box fontSize="94px" mt="-25px">40</Box>
-          <Box direction="column">
-              <Box fontSize="43px" textAlign="start" mb="-18px" >00</Box><Box fontSize="21px" textAlign="start" mb="-5px" >/mo.</Box>
-          </Box>
-        </Flex>
-      </Box>
-      <Box justify="start" w="100%" p="5">
-      <List pb="6" textAlign="start" color="#000000" spacing={1}>
-                <ListItem>
-                    <ListIcon as={CheckIcon}  />
-                    Fast Speeds up to 200 Mbps Upload & Download 
-                </ListItem>
-            </List>
-      <CallNowPhoneBt/>
-      </Box>
-    </Flex>
-
-    <Flex rounded="md" boxShadow="2xl" bgColor="#F1F1F1" align="center" direction="column" >
-      <Box bgColor="#000050" color="#fff" w="100%" mb="" p="5">
-        <Heading pb="10px" as="h3" fontSize="2xl">Ziply Fiber 50/50</Heading>
-
-        <Flex align="start" color="#fff" justify="center" direction="row" fontWeight="700">
-          <Box fontSize="29px" mt="7px" >$</Box>
-          <Box fontSize="94px" mt="-25px">20</Box>
-          <Box direction="column">
-              <Box fontSize="43px" textAlign="start" mb="-18px" >00</Box><Box fontSize="21px" textAlign="start" mb="-5px" >/mo.</Box>
-          </Box>
-        </Flex>
-      </Box>
-      <Box justify="start" w="100%" p="5">
-      <List pb="6" textAlign="start" color="#000000" spacing={1}>
-                <ListItem>
-                    <ListIcon as={CheckIcon}  />
-                    Reliable Speed up to 50 Mbps Upload & Download 
-                </ListItem>
-            </List>
-      <CallNowPhoneBt/>
-      </Box>
-    </Flex>
-  </SimpleGrid>
-      <Text pt="12">For new residential customers. One-time introductory price for the first 12 months. Prices shown with autopay and paperless billing.</Text>
+    <Heading mb="10">Optimum Internet plans and prices</Heading>
+<Flex maxW="1250px" flexDirection={"column"} >
+    <Table borderBottomRadius="20px" size="lg" fontSize="21px" variant="striped" boxShadow="xl" colorScheme="gray">
+  <Thead>
+    <Tr bgGradient="linear(to-r, #24D9C3, #0084D6)">
+      <Th borderTopStartRadius="20px" color="#fff" fontSize="24px">Optimum plan</Th>
+      <Th color="#fff" fontSize="24px">Starting price*</Th>
+      <Th color="#fff" fontSize="24px">Price after 12 mos.*</Th>
+      <Th color="#fff" fontSize="24px">Download speed</Th>
+      <Th borderTopEndRadius="20px" color="#fff" fontSize="24px">Upload speed</Th>
+    </Tr>
+  </Thead>
+  <Tbody>
+    <Tr>
+      <Td>Optimum 300</Td>
+      <Td>$<Box as="span" fontSize="45px" fontWeight="700" >35</Box>/mo*</Td>
+      <Td>$<Box as="span" fontSize="45px" fontWeight="700" >109</Box>.99/mo*</Td>
+      <Td>300 Mbps</Td>
+      <Td>20 Mbps</Td>
+    </Tr>
+    <Tr>
+      <Td>Optimum 500</Td>
+      <Td>$<Box as="span" fontSize="45px" fontWeight="700" >45</Box>/mo*</Td>
+      <Td>$<Box as="span" fontSize="45px" fontWeight="700" >129</Box>.99/mo*</Td>
+      <Td>500 Mbps</Td>
+      <Td>20 Mbps</Td>
+    </Tr>
+    <Tr>
+      <Td>Optimum 1 Gig</Td>
+      <Td>$<Box as="span" fontSize="45px" fontWeight="700" >55</Box>/mo*</Td>
+      <Td>$<Box as="span" fontSize="45px" fontWeight="700" >139</Box>.99/mo*</Td>
+      <Td>940 Mbps</Td>
+      <Td>35 Mbps</Td>
+    </Tr>
+    <Tr>
+      <Td>Fiber Internet 500</Td>
+      <Td>$<Box as="span" fontSize="45px" fontWeight="700" >35</Box>/mo*</Td>
+      <Td>$<Box as="span" fontSize="45px" fontWeight="700" >129</Box>.99/mo*</Td>
+      <Td>500 Mbps</Td>
+      <Td>500 Mbps</Td>
+    </Tr>
+    <Tr>
+      <Td borderBottomStartRadius="20px">Fiber Internet 1 Gig</Td>
+      <Td>$<Box as="span" fontSize="45px" fontWeight="700" >45</Box>/mo*</Td>
+      <Td>$<Box as="span" fontSize="45px" fontWeight="700" >139</Box>.99/mo*</Td>
+      <Td>940 Mbps</Td>
+      <Td borderBottomEndRadius="20px">940 Mbps</Td>
+    </Tr>
+  </Tbody>
+</Table>
+<Text pt="12">*Pricing per month plus taxes for length of contract. Additional fees and terms may apply. Pricing varies by location and availability. All prices are subject to change at any time. May or may not be available based on service address.</Text>
+</Flex>
+  
+      
 </Box>
 </>
     )}
-
 
 
 export default Plans

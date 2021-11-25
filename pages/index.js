@@ -4,8 +4,7 @@ import Hero from '../src/components/organisms/Hero'
 import Cta from '../src/components/organisms/Cta'
 import Plans from '../src/components/organisms/Plans'
 import About from '../src/components/organisms/About'
-import SmallBusiness from '../src/components/organisms/SmallBusiness'
-import Peacock from '../src/components/organisms/Peacock'
+import Advanteges from '../src/components/organisms/Advanteges'
 
 export default function Home() {
   return (
@@ -14,9 +13,8 @@ export default function Home() {
       <Hero/>
       <Cta/>
       <Plans/>
-      <Peacock/>
-      <SmallBusiness/>
       <About/>
+      <Advanteges/>
       <Footer/>
     </div>
   )

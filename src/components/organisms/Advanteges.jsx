@@ -3,11 +3,11 @@ import { Box, SimpleGrid, Heading, Text, Flex, List, ListIcon, ListItem } from '
 import CallNowPhoneBt from '../atoms/CallNowPhoneBt'
 import { CheckIcon } from '@chakra-ui/icons'
 
-const SmallBusiness = () => {
+const Advanteges = () => {
     return (
 <>
 <Box align="center" bgColor="#fff" p={{base:"10", md:"0 10 "}}>
-    <Heading mb="10">Small Business: Get the job done with reliable, fast and affordable internet</Heading>
+    <Heading mb="10">What you get with Optimum</Heading>
 
     <SimpleGrid columns={{base:"1", md:"2"}} pb="30px" spacing={10} maxW="1250px">
     <Flex rounded="md" boxShadow="2xl" bgColor="#F1F1F1" align="center" direction="column" >
@@ -112,4 +112,4 @@ const SmallBusiness = () => {
 </>
     )}
 
-export default SmallBusiness
+export default Advanteges

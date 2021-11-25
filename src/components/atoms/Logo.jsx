@@ -6,7 +6,7 @@ const LogoHeader = () => {
   return (
     <>
     <Box>
-      <Link href="/"><Image src="/logo-ziply-fiber.svg"/></Link>
+      <Link href="/"><Image src="/logo-optimum.svg"/></Link>
     </Box>
     </>
   )

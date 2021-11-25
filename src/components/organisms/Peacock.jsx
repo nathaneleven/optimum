@@ -1,7 +1,6 @@
 import React from 'react'
 import { Flex, Box, Heading, AspectRatio, Stack, Text, List, ListIcon, ListItem } from '@chakra-ui/layout'
 import { Image } from '@chakra-ui/image'
-import { CheckIcon } from '@chakra-ui/icons'
 
 const Peacock = () => {
     return (
