@@ -4,7 +4,7 @@ import { Table, Thead, Tbody, Tr, Th, Td } from "@chakra-ui/react"
 const Plans = () => {
     return (
 <>
-<Box align="center" bgColor="#fff" p={{base:"10", md:"0 10 "}}>
+<Box align="center" bgColor="#fff" py={{base:"10", md:"70"}}>
     <Heading mb="10">Optimum Internet plans and prices</Heading>
 <Flex maxW="1250px" flexDirection={"column"} >
     <Table borderBottomRadius="20px" size="lg" fontSize="21px" variant="striped" boxShadow="xl" colorScheme="gray">
